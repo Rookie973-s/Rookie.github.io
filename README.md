@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RTSTUDIOS Watchlist</title>
+  <title>Watchlist</title>
   <style>
     body {
       font-family: sans-serif;
@@ -150,7 +150,7 @@
 </head>
 <body>
 
-  <h2>🎬 RTSTUDIOS Watchlist 🎬</h2>
+  <h2></h2>
 
   <!-- Login area -->
   <input type="text" id="usernameInput" placeholder="Enter your name...">
