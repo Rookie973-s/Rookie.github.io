@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Watchlist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTSTUDIOS Watchlist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
   <style>
+    /* General Styles */
     body {
       font-family: sans-serif;
       background-color: #121212;
@@ -63,94 +65,90 @@
       font-style: italic;
       margin-bottom: 10px;
     }
-    @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=IM+Fell+English+SC&display=swap');
 
-.lightning-container {
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-}
+    /* Fantasy Banner */
+    .lightning-container {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+    }
 
-.fantasy-banner {
-  background: rgba(255, 248, 220, 0.07);
-  padding: 15px 25px;
-  border: 1px solid rgba(255, 248, 220, 0.25);
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 0 30px rgba(255, 244, 214, 0.2);
-  text-align: center;
-  font-family: 'Crimson Pro', serif;
-  opacity: 0;
-  animation: fadeInBanner 3s ease-out 0.5s forwards;
-}
+    .fantasy-banner {
+      background: rgba(255, 248, 220, 0.07);
+      padding: 15px 25px;
+      border: 1px solid rgba(255, 248, 220, 0.25);
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 30px rgba(255, 244, 214, 0.2);
+      text-align: center;
+      font-family: 'Crimson Pro', serif;
+      opacity: 0;
+      animation: fadeInBanner 3s ease-out 0.5s forwards;
+    }
 
-.tagline {
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: #f0e6d2;
-  opacity: 0.8;
-  margin: 0;
-}
+    .tagline {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #f0e6d2;
+      opacity: 0.8;
+      margin: 0;
+    }
 
-.studio-name {
-  font-family: 'IM Fell English SC', serif;
-  font-size: 24px;
-  letter-spacing: 2px;
-  color: #ffe9b0;
-  margin: 0;
-  text-shadow: 1px 1px 4px rgba(255, 238, 180, 0.6), 0 0 10px rgba(255, 221, 120, 0.2);
-  animation: glowText 4s ease-in-out infinite alternate;
-}
+    .studio-name {
+      font-family: 'IM Fell English SC', serif;
+      font-size: 24px;
+      letter-spacing: 2px;
+      color: #ffe9b0;
+      margin: 0;
+      text-shadow: 1px 1px 4px rgba(255, 238, 180, 0.6), 0 0 10px rgba(255, 221, 120, 0.2);
+      animation: glowText 4s ease-in-out infinite alternate;
+    }
 
-/* Fade in after lightning */
-@keyframes fadeInBanner {
-  to {
-    opacity: 1;
-  }
-}
+    @keyframes fadeInBanner {
+      to {
+        opacity: 1;
+      }
+    }
 
-/* Magical glow */
-@keyframes glowText {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 221, 150, 0.2);
-  }
-  100% {
-    text-shadow: 0 0 15px rgba(255, 221, 120, 0.4), 0 0 25px rgba(255, 235, 150, 0.3);
-  }
-}
+    @keyframes glowText {
+      0% {
+        text-shadow: 0 0 5px rgba(255, 221, 150, 0.2);
+      }
+      100% {
+        text-shadow: 0 0 15px rgba(255, 221, 120, 0.4), 0 0 25px rgba(255, 235, 150, 0.3);
+      }
+    }
 
-/* Lightning effect */
-.lightning-flash {
-  position: absolute;
-  top: -200px;
-  left: -200px;
-  width: 1000px;
-  height: 1000px;
-  background: white;
-  opacity: 0;
-  animation: lightningStrike 1.2s ease-in-out 0.1s;
-  pointer-events: none;
-  border-radius: 50%;
-  filter: blur(80px);
-  z-index: -1;
-}
+    .lightning-flash {
+      position: absolute;
+      top: -200px;
+      left: -200px;
+      width: 1000px;
+      height: 1000px;
+      background: white;
+      opacity: 0;
+      animation: lightningStrike 1.2s ease-in-out 0.1s;
+      pointer-events: none;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: -1;
+    }
 
-@keyframes lightningStrike {
-  0% { opacity: 0; }
-  5% { opacity: 1; }
-  10% { opacity: 0; }
-  15% { opacity: 0.7; }
-  20% { opacity: 0; }
-  100% { opacity: 0; }
-}
-
+    @keyframes lightningStrike {
+      0% { opacity: 0; }
+      5% { opacity: 1; }
+      10% { opacity: 0; }
+      15% { opacity: 0.7; }
+      20% { opacity: 0; }
+      100% { opacity: 0; }
+    }
   </style>
 </head>
 <body>
 
-  <h2></h2>
+  <h2>🎬 RTSTUDIOS Watchlist 🎬</h2>
 
   <!-- Login area -->
   <input type="text" id="usernameInput" placeholder="Enter your name...">
@@ -163,6 +161,8 @@
 
   <!-- List display -->
   <ul id="seriesList"></ul>
+
+  <!-- Fantasy lightning banner -->
   <div class="lightning-container">
     <div class="lightning-flash"></div>
     <div class="fantasy-banner">
@@ -170,14 +170,12 @@
       <h1 class="studio-name">RTSTUDIOS</h1>
     </div>
   </div>
-  
+
   <script>
-    // GLOBAL VARIABLES
     let currentUser = null;
     const seriesList = document.getElementById("seriesList");
     const inputBox = document.getElementById("seriesInput");
 
-    // Function to log in user
     function loginUser() {
       const username = document.getElementById("usernameInput").value.trim();
       if (username !== "") {
@@ -188,7 +186,6 @@
       }
     }
 
-    // Function to add a new series
     function addSeries() {
       const seriesName = inputBox.value.trim();
       if (seriesName !== "") {
@@ -221,7 +218,6 @@
       }
     }
 
-    // Save user's watchlist to localStorage
     function saveList() {
       if (!currentUser) return;
 
@@ -240,7 +236,6 @@
       localStorage.setItem(`watchlist_${currentUser}`, JSON.stringify(allItems));
     }
 
-    // Load watchlist for current user
     function loadList() {
       seriesList.innerHTML = "";
 
